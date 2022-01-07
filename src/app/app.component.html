@@ -1,14 +1,13 @@
-<main>
-  <h3>Global State</h3>
-  {{ store.state | async | json }}
+<h1>rxjs-redux-from-scratch</h1>
 
-  <h3>Selected State - current user:</h3>
+<h2>Global State</h2>
+{{ store.state | async | json }}
 
-  {{ currentUser$ | async | json }}
+<h2>Selected State - current user:</h2>
 
-  <hr />
-  <button (click)="set()">Set</button>
-  <button (click)="update()">Update</button>
-  <button (click)="delete()">Remove</button>
-</main>
-<router-outlet></router-outlet>
+{{ currentUser$ | async | json }}
+
+<hr />
+<button (click)="set()">Set</button>
+<button (click)="update()">Update</button>
+<button (click)="delete()">Remove</button>
